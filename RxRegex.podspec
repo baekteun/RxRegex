@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxRegex'
-  s.version          = '1.0.0'
+  s.version          = ENV['LIB_VERSION'] || '1.0.0'
   s.summary          = 'Regular expression with RxSwift'
 
   s.description      = 'Use regular expression with RxSwift'
