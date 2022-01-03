@@ -1,9 +1,11 @@
 # RxRegex
 
-[![CI Status](https://img.shields.io/travis/baegteun/RxRegex.svg?style=flat)](https://travis-ci.org/baegteun/RxRegex)
 [![Version](https://img.shields.io/cocoapods/v/RxRegex.svg?style=flat)](https://cocoapods.org/pods/RxRegex)
 [![License](https://img.shields.io/cocoapods/l/RxRegex.svg?style=flat)](https://cocoapods.org/pods/RxRegex)
 [![Platform](https://img.shields.io/cocoapods/p/RxRegex.svg?style=flat)](https://cocoapods.org/pods/RxRegex)
+[![Swift 5.0+](https://img.shields.io/badge/Swift-5.0%2B-orange.svg?style=flat)](https://developer.apple.com/swift/)
+![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 ## Example
 
