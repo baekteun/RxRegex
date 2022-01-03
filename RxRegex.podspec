@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
 
   s.description      = 'Use regular expression with RxSwift'
 
-  s.homepage         = 'https://github.com/baegteun/RxRegex'
+  s.homepage         = 'https://github.com/baekteun/RxRegex'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'baegteun' => 'baegteun@gmail.com' }
-  s.source           = { :git => 'https://github.com/baegteun/RxRegex.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/baekteun/RxRegex.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   
