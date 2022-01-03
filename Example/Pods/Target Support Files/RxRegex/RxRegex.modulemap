@@ -1,0 +1,6 @@
+framework module RxRegex {
+  umbrella header "RxRegex-umbrella.h"
+
+  export *
+  module * { export * }
+}

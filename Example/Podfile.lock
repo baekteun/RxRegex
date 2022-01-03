@@ -1,0 +1,16 @@
+PODS:
+  - RxRegex (0.1.0)
+
+DEPENDENCIES:
+  - RxRegex (from `../`)
+
+EXTERNAL SOURCES:
+  RxRegex:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxRegex: a37608959f13bd0b4d6be017faca0b51c246eb78
+
+PODFILE CHECKSUM: 8b9e70af36a6fd39d4e914f4cae4bae5b9c13520
+
+COCOAPODS: 1.11.2
