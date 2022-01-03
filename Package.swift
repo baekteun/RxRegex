@@ -22,6 +22,9 @@ let package = Package(
             dependencies: ["RxSwift"]),
         .testTarget(
             name: "RxRegexTests",
-            dependencies: ["RxRegex"]),
+            dependencies: [
+                "RxRegex",
+                .product(name: "RxTest", package: "RxSwift")
+            ]),
     ]
 )

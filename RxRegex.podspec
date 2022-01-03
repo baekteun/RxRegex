@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   
   s.swift_version = '5.0'
 
-  s.source_files = 'RxRegex/Classes/**/*'
+  s.source_files = 'Sources/RxRegex/Classes/**/*'
   
   s.dependency 'RxSwift', '~> 6.2.0'
 
