@@ -1,24 +1,50 @@
 //
 //  ViewController.swift
-//  RxRegex
+//  RxRegex_Example
 //
-//  Created by baegteun on 01/03/2022.
-//  Copyright (c) 2022 baegteun. All rights reserved.
+//  Created by 최형우 on 2022/01/03.
+//  Copyright © 2022 CocoaPods. All rights reserved.
 //
 
+import RxRegex
+import RxSwift
 import UIKit
+import RxCocoa
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var validationLabel: UILabel!
+    
+    private let pattern = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}$"
+    
+    private let disposeBag: DisposeBag = .init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let sharedText = textField.rx.text.asObservable().regex(pattern).share(replay: 2)
+        
+        sharedText
+            .map { $0 ? UIColor.blue : UIColor.red }
+            .bind(to: validationLabel.rx.textColor)
+            .disposed(by: disposeBag)
+        
+        sharedText
+            .map { $0 ? "Valid" : "Invalid" }
+            .bind(to: validationLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
+    
+    @objc func textFieldDidChange(_ sender: UITextField){
+        
+    }
 }
-
